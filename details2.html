@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .price del {
+    color: #999;
+    font-size: 0.9em;
+  }
+  
+  .price .discount {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .table{
+      width: 150px;
+      font-size: 25px;
+    }
+
+        #price1 {
+            color: grey;
+            font-size: 30px;
+        }
+
+        #price2 {
+            font-size: 50px;
+            color: #462445;
+            font-weight: bolder;
+        }
+
+        .cartparent {
+            position: relative;
+        }
+
+        .container2 {
+            margin: 0 auto;
+            width: 80% !important;
+        }
+
+        .addto {
+            background-color: pink;
+            color: black;
+            font-weight: bolder;
+            font-size: 20px;
+            padding: 5px;
+            text-transform: capitalize;
+            display: none;
+            position: absolute;
+            bottom: -20px;
+            transition: all 2s ease-in !important;
+        }
+
+        .addto {
+      background-color: pink;
+      color: black;
+      font-weight: bolder;
+      font-size: 20px;
+      padding: 5px;
+      text-transform: capitalize;
+      display: none;
+      position: absolute;
+      bottom: 0px;
+      transition: all 2s ease-in !important;
+    }
+
+    .cartparent:hover:hover .addto{
+      display: inline;
+    transition: all 1s ease-in;
+    opacity: 1;
+    animation-name: abc;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+
+}
+@keyframes abc {
+    0%{
+         bottom: -30px;
+    }
+    100%{
+         bottom: 0px;
+    }
+    
+}
+
+
+
+     
+
+        .cartparent:hover .price {
+            display: none;
+        }
+        .footer-img{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .anchor{
+     text-decoration: none !important;
+     color: rgb(241, 236, 236) !important;
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+   gap: 150px;
+   padding-bottom: 50px;
+  
+}
+.footer div{
+         width: 200px;
+}
+.footer h5{
+    margin-bottom: 20px;
+    line-height: 10px;
+}
+.footer h6{
+    line-height: 30px;
+}
+.footer a{
+    margin-bottom: 10px;}
+
+    h1{
+         color: white;
+    }
+    .container3{
+         width: 89%;
+         margin: 0 auto;
+    }
+    .login{
+      cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="navbar bg-black text-white pt-3 pb-3">
+        <div class="container w-100">
+            <div class="logo"> <img src="./public/imges/the-fitness-store-logo_346x.avif" alt="" height="90px"></div>
+            <div class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                        data-bs-toggle="dropdown"> cardio</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#"> Home Equipment by Type</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a> Elliptical Machines </li>
+                                <li><a class="dropdown-item" href="#"></a> Inversion</li>
+                                <li><a class="dropdown-item" href="#"></a> Upright Bikes</li>
+                                <li><a class="dropdown-item" href="#"></a> Recumbent Bikes</li>
+                                <li><a class="dropdown-item" href="#"></a> Rowing Machines</li>
+                                <li><a class="dropdown-item" href="#"></a> Recumbent Steppers</li>
+                                <li><a class="dropdown-item" href="#"></a> Treadmills</li>
+                                <li><a class="dropdown-item" href="#"></a> Cycle Trainers</li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#"> Home Equipment by Brand</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a> BodyCraft </li>
+                                <li><a class="dropdown-item" href="#"></a> Echelon Fitness</li>
+                                <li><a class="dropdown-item" href="#"></a> Endurance </li>
+                                <li><a class="dropdown-item" href="#"></a>Landice </li>
+                                <li><a class="dropdown-item" href="#"></a> Life Fitness </li>
+                                <li><a class="dropdown-item" href="#"></a> Nautilus </li>
+                                <li><a class="dropdown-item" href="#"></a> Saris </li>
+                                <li><a class="dropdown-item" href="#"></a> Schwinn</li>
+                                <li><a class="dropdown-item" href="#"></a> Spirit </li>
+                                <li><a class="dropdown-item" href="#"></a> Teeter </li>
+                                <li><a class="dropdown-item" href="#"></a> WaterRower </li>
+                                <li><a class="dropdown-item" href="#"></a> Universal Home Gym Equipment </li>
+
+
+                            </ul>
+
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="  dropdown-toggle dropdown-item" href="#"> Commercial Equipment by Type</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a> Rowers </li>
+                                <li><a class="dropdown-item" href="#"></a> Elliptical Machines </li>
+                                <li><a class="dropdown-item" href="#"></a> Upright Bikes </li>
+                                <li><a class="dropdown-item" href="#"></a> Recumbent Bikes </li>
+                                <li><a class="dropdown-item" href="#"></a> Recumbent Steppers </li>
+                                <li><a class="dropdown-item" href="#"></a> Steppers </li>
+                                <li><a class="dropdown-item" href="#"></a> Treadmills </li>
+
+
+                            </ul>
+
+                        </li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"> Commercial
+                                Equipment by
+                                Brand</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a> BodyCraft </li>
+                                <li><a class="dropdown-item" href="#"></a> Echelon Fitness </li>
+                                <li><a class="dropdown-item" href="#"></a> Endurance </li>
+                                <li><a class="dropdown-item" href="#"></a> Landice Fitness </li>
+                                <li><a class="dropdown-item" href="#"></a> Schwinn Fitness </li>
+                                <li><a class="dropdown-item" href="#"></a> Spirit Fitness </li>
+                                <li><a class="dropdown-item" href="#"></a> Water Rower </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                        data-bs-toggle="dropdown">GYM systems</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Body Solid Collection</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"></a> Benches </li>
+                                <li><a class="dropdown-item" href="#"></a> Single Station Machines</li>
+                                <li><a class="dropdown-item" href="#"></a> Dual Station Machines </li>
+                                <li><a class="dropdown-item" href="#"></a> Multi Station Gyms </li>
+                                <li><a class="dropdown-item" href="#"></a> </li>
+                                <li><a class="dropdown-item" href="#"></a> </li>
+
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> InFlight Fitness Collection</a></li>
+                        <li><a class="dropdown-item" href="#"> Paradigm Fitness Collection</a></li>
+                        <li><a class="dropdown-item" href="#"> BodyCraft Fitness Collection</a></li>
+                        <li><a class="dropdown-item" href="#"> Spirit Fitness Commercial Collection</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                        data-bs-toggle="dropdown">plate loaded</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">body solid collections</a></li>
+                        <li><a class="dropdown-item" href="#">paradigm fitness collections</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white text-uppercase fs-6" href="#" role="button"
+                        data-bs-toggle="dropdown">free weights</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Dumbbells</a></li>
+                        <li><a class="dropdown-item" href="#"> Olympic Plates and Sets</a></li>
+                        <li><a class="dropdown-item" href="#"> Kettlebells </a></li>
+                        <li><a class="dropdown-item" href="#"> Bars and Collars </a></li>
+                        <li><a class="dropdown-item" href="#"> PowerBlock Selectorized Dumbbells, Kettlebells and
+                                Barbells </a></li>
+                        <li><a class="dropdown-item" href="#"> Benches </a></li>
+                        <li><a class="dropdown-item" href="#"> Storage </a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                        data-bs-toggle="dropdown">accessories</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Accessories By Type</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Lifting Gloves </a></li>
+                                <li><a class="dropdown-item" href="#">Lifting Belts </a></li>
+                                <li><a class="dropdown-item" href="#"> Lifting Straps </a></li>
+                                <li><a class="dropdown-item" href="#"> Sports Medical </a></li>
+                                <li><a class="dropdown-item" href="#"> Jump Ropes </a></li>
+                                <li><a class="dropdown-item" href="#"> Balls - Bosu, Exercise, Slam, Wall, Medicine </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"> Foam Rollers </a></li>
+                                <li><a class="dropdown-item" href="#"> Fitness Mats </a></li>
+                                <li><a class="dropdown-item" href="#"> Fitness Cleaning Supplies </a></li>
+                                <li><a class="dropdown-item" href="#"> Cable Attachments</a></li>
+                                <li><a class="dropdown-item" href="#"> Fitness Clothing </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Accessories By Brand</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Valeo Products </a></li>
+                                <li><a class="dropdown-item" href="#"> Grizzly Fitness Products </a></li>
+                                <li><a class="dropdown-item" href="#"> WeckMethod and Bosu Balance Trainers </a></li>
+                                <li><a class="dropdown-item" href="#"> SPRI Products</a></li>
+                                <li><a class="dropdown-item" href="#"> Schiek Products </a></li>
+                                <li><a class="dropdown-item" href="#"> Harbinger Fitness Products </a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle " href="#"> Fitness Posters / Books</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                                        Bruce Algra </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Motivational Fitness Posters </a></li>
+                                        <li><a class="dropdown-item" href="#"> Workout Posters</a></li>
+                                        <li><a class="dropdown-item" href="#"> Co-Ed Fitness Posters </a></li>
+                                        <li><a class="dropdown-item" href="#"> Cardio Workout Posters </a></li>
+                                        <li><a class="dropdown-item" href="#"> Exercise Posters </a></li>
+                                        <li><a class="dropdown-item" href="#"> Anatomy Posters </a></li>
+                                        <li><a class="dropdown-item" href="#"> </a></li>
+                                        <li><a class="dropdown-item" href="#"> </a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#"> Fighthrough Fitness </a></li>
+                                <li><a class="dropdown-item" href="#"> Productive Fitness Products </a></li>
+
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> Miscellaneous Accessories </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                        data-bs-toggle="dropdown">bicycles</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Bicycle Lines Carried</a></li>
+                        <li><a class="dropdown-item" href="#"> Classic High Wheelers</a></li>
+
+                    </ul>
+                </li>
+            </div>
+            <div class="d-flex gap-2 align-items-center login">
+                <span data-bs-toggle="offcanvas" data-bs-target="#demo">login/register</span>
+                <button class="btn bg-black text-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"> <i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <span data-bs-toggle="offcanvas" data-bs-target="#demo2"><i
+                        class="fa-solid fa-cart-shopping"></i></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header bg-black text-white text-uppercase">
+            <h1 class="offcanvas-title">sign in </h1>
+            <span data-bs-dismiss="offcanvas" aria-label="Close" class="position-absolute end-0"> <i
+                    class="fa-solid fa-xmark text-white  fs-1"></i></span>
+        </div>
+
+
+        <div class="offcanvas-body" id="offcanvas-login">
+            <div class="mb-4 mt-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+
+            <div class="mb-4">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+
+            🤦🏻‍♀️<a href="" class="text-center text-black text-capitalize"> lost your password ? </a> <br>
+            <button class="btn  btn-outline-black text-center w-100 d-block mt-4 mb-5 bg-black   text-white "
+                type="button" id="login-file">log in </button>
+
+            <hr>
+
+            <div>
+                <i class="fa-solid fa-user fs-1 text-center"></i>
+                <h6 class="text-capitalize text-center"> no account yet ?</h6>
+                <p>Registering for this site allows you to access your order status and history. Just fill in the fields
+                    below,
+                    and we’ll get a new account set up for you in no time. We will only ask you for information
+                    necessary to make
+                    the purchase process faster and easier.</p>
+                <p href="" class="text-capitalize text-black text-center" id="register-btn"> create an account</p>
+            </div>
+
+            <hr>
+        </div>
+
+
+        <div class="offcanvas-body text-capitalize" id="offcanvas-register">
+            <div class="mb-4 mt-4">
+                <label for="email" class="form-label">first name</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+
+            <div class="mb-4">
+                <label for="pwd" class="form-label">last name</label>
+                <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="mb-4">
+                <label for="pwd" class="form-label">email-address</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="mb-4">
+                <label for="pwd" class="form-label">password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+
+
+            <button class="btn  btn-outline-black text-center w-100 d-block mt-4 mb-5 bg-black text-white   "
+                type="button">register </button>
+
+            <hr>
+
+            <div>
+                <i class="fa-solid fa-user fs-1 text-center"></i>
+                <h6 class="text-capitalize text-center"> no account yet ?</h6>
+                <p>Registering for this site allows you to access your order status and history. Just fill in the fields
+                    below,
+                    and we’ll get a new account set up for you in no time. We will only ask you for information
+                    necessary to make
+                    the purchase process faster and easier.</p>
+                <p href="" class="text-capitalize text-black text-center" id="login-btn">log in </p>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- offcanvas2 -->
+    <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header mt-5 ">
+            <input type="text" class="search position-relative text-white" placeholder="search for products"> <span
+                class="searchs"> <i class="fa-solid fa-magnifying-glass fs-1 "></i></span>
+
+        </div>
+        <div class="offcanvas-body small">
+            <span data-bs-dismiss="offcanvas" aria-label="Close" class="btn-bottom"> <i
+                    class="fa-solid fa-xmark text-white "></i></span>
+        </div>
+    </div>
+
+
+
+    <!-- offcanvas3 -->
+
+
+    <div class="offcanvas offcanvas-end" id="demo2">
+        <div class="offcanvas-header bg-black text-white text-uppercase">
+            <h1 class="offcanvas-title">shopping cart </h1>
+            <span data-bs-dismiss="offcanvas" aria-label="Close" class="position-absolute end-0"> <i
+                    class="fa-solid fa-xmark text-white  fs-1"></i></span>
+        </div>
+
+
+        <div class="offcanvas-body" id="card-info">
+        </div>
+    </div>
+
+
+    <div class="container mt-5 d-flex gap-5">
+        <div id="imgpare">
+             
+        </div>
+        <div class="mt-5 pt-5 d-flex justify-content-center gap-5 align-items-center mb-5 pb-5 ms-5 ps-5"  >
+            <img src="" alt="" id="images" height="300px">
+            <div>
+                <h1 id="h1"></h1>
+                <del id="price1"></del>
+                <span id="price2" class="ms-5"></span>
+                <div class="d-flex align-items-center gap-5">
+                    <table class="border-solid 2 grey   fs-3 text-center w-25 table">
+                        <tr>
+                            <td onclick="subs()">-</td>
+                            <td id="countn"> 0 </td>
+                            <td onclick="plus()">+</td>
+                        </tr>
+                    </table>
+                    <span data-bs-toggle="offcanvas" data-bs-target="#demo2"
+                        class=" btn bg-black fs-5 text-capitalize text-white p-2" onclick="CARTTOADD()"><i
+                            class="fa-solid fa-cart-shopping"></i> add to cart</span>
+                </div>
+            </div>
+
+        </div>
+        <hr class="mt-5 pt-5">
+    </div>
+
+
+
+
+    <div class="container3">
+        <div id="shopping" class="d-flex flex-wrap gap-5 justify-content-center text-black ">
+
+
+        </div>
+    </div>
+
+    <div class="bg-black text-white text-capitalize pt-5 mt-5">
+        <div class="fi pb-5 mb-3">
+          <img src="./public/imges/the-fitness-store-logo_346x.avif" alt="" height="90px"  >
+        </div>
+            
+            <div class=" footer">
+                 <div>
+                       <h5>Our Location</h5>
+                       <h6>The Fitness Store</h6>
+                       <h6  >1410 Dewey St.
+                        Manitowoc, WI 54220
+                        Phone: 920-684-8088
+                        (Email recommended)</h6>
+                 </div>
+                 <div>
+                      <h5>Information</h5>
+                      <a href="" class="text-decoration-none text-white d-block">Bicycles</a>
+                      <a href="" class="text-decoration-none text-white d-block">Blog</a>
+                      <a href="" class="text-decoration-none text-white d-block ">Virtual Store Tour</a>
+                     
+                      <a href="" class="text-decoration-none text-white d-block">Manitowoc, WI Video</a>
+                      <a href="" class="text-decoration-none text-white d-block">About Us</a>
+                      <a href="" class="text-decoration-none text-white d-block">Customer Service</a>
+                      <a href="" class="text-decoration-none text-white d-block">Sitemap</a>
+                      <a href="" class="text-decoration-none text-white d-block">Orders and Returns</a>
+                      <a href="" class="text-decoration-none text-white d-block">Contact Us</a>
+                 </div>
+                 <div>
+                  <h5>Why Buy From Us</h5>
+                  <a href="" class="text-decoration-none text-white d-block"> Shipping & Returns</a>
+                  <a href="" class="text-decoration-none text-white d-block">Secure Shopping</a>
+                  <a href="" class="text-decoration-none text-white d-block">International Shipping</a>
+                  <a href="" class="text-decoration-none text-white d-block">Affiliates</a>
+                  <a href="" class="text-decoration-none text-white d-block">Group Sales</a>
+                  <a href="" class="text-decoration-none text-white d-block"> Terms of Service</a>
+                  <a href="" class="text-decoration-none text-white d-block"></a>
+                 </div>
+                 <div>
+                  <h5>My Account</h5>
+                  <a href="" class="text-decoration-none text-white d-block">Login / Register</a>
+                  <a href="" class="text-decoration-none text-white d-block"> View Cart</a>
+                  <a href="" class="text-decoration-none text-white d-block">Track My Order</a>
+                  <a href="" class="text-decoration-none text-white d-block">Help</a>
+                 </div>
+            </div>
+      </div>
+
+
+
+
+    <script>
+
+       let b;
+       let updatesub = 0;
+        const a = new URLSearchParams(window.location.search);
+        let images = a.get("image");
+        let title = a.get("title");
+        let price1 = a.get("price1");
+        let price2 = a.get("price2");
+        let imgparent = a.get("imgparent");
+        let parsedImages = JSON.parse(decodeURIComponent(imgparent)) || [];
+
+        let imgpare = document.getElementById("imgpare")
+        console.log(parsedImages)
+        parsedImages.forEach((element)=>{
+         let cart2 = document.createElement("div");
+         cart2.onclick = () => {
+        b = element; // Store the selected image URL
+        console.log("Selected Image:", b);
+       loadimg()
+    };
+        cart2.style.height = "100px";
+        cart2.style.width="100px"
+        cart2.style.margin = "5px";
+        cart2.innerHTML = `<img src="${element}" alt="Image" style="width: 100%; height: 100%; object-fit: cover;" />`;
+        imgpare.appendChild(cart2);
+        })
+    //       let arrays = parsedImages;
+    //       array.forEach((ele)=> console.log(ele))
+    // console.log(imgparent)
+
+ 
+       function loadimg() {
+    let display = b || images;
+    if (display) {
+        let img = document.getElementById("images");
+        if (img) img.src = display;
+    }
+    if (title) {
+        document.getElementById("h1").innerText = title;
+        document.getElementById("price1").innerText = price1;
+        document.getElementById("price2").innerText = price2;
+    }
+}
+
+     loadimg();
+        console.log(images, title, price1, price2);
+
+
+        //   fetch2 data
+        let shopping = document.getElementById("shopping");
+        shopping.style.justifyContent = "center"
+        
+        function fetchdata() {
+            fetch("http://localhost:3000/products21")
+                .then(response => response.json())  // Converts the response to JSON
+                .then(data => alldatacard(data))     // Logs the fetched data to the console
+                .catch(error => console.error('Error:', error));  // Catches and logs any errors
+        }
+        fetchdata()
+        function alldatacard(data) {
+    shopping.innerHTML = ""; // Clear previous content
+
+    data.forEach(element => {
+        // Use the selected image (b) if available, otherwise use the default image
+        let disimga = element.image;
+
+        let card = document.createElement("div");
+      
+        card.style.width = "500px";
+        card.classList.add("cartparent");
+
+        card.innerHTML = `
+    <div>
+        <a href="details2.html?image=${encodeURIComponent(element.image)}&title=${encodeURIComponent(element['product-title'])}&price1=${encodeURIComponent(element.price)}&price2=${encodeURIComponent(element.price2)}" class="anchor">
+            <div>
+                <img src="${element.image}" height="300px"/>
+                <h5 class="text-black">${element['product-title']}</h5>
+                <div class="price">
+                    <del>${element.price}</del>
+                    <span class="discount">${element.price2}</span>
+                </div>
+                <span class="addto"><i class="fa-solid fa-cart-shopping"></i> Add to cart</span>
+            </div>
+        </a>
+    </div>
+`;
+        shopping.appendChild(card);
+    });
+}
+
+        let cardinfo = document.getElementById("card-info");
+
+
+        // pluswala
+        let count_number = 0;
+        let array = JSON.parse(localStorage.getItem("username")) || []
+
+        function subs() {
+            if (count_number > 0) {
+             
+                count_number--;
+                document.getElementById("countn").innerText = count_number;
+            }
+        }
+        function plus() {
+            count_number++;
+         
+            document.getElementById("countn").innerText = count_number;
+        }
+
+        function CARTTOADD() {
+            let obj = {
+                  images,
+                  title,
+                  price1,
+                  price2,
+                  count_number,
+            }
+   
+            array.push(obj) ;
+            console.log(array) ;
+            localStorage.setItem("username",JSON.stringify(array))
+            addtocard()
+
+
+        }
+
+        function calculateSubtotal() {
+  updatesub = 0;
+   array.forEach((element, index) => {
+      let price2 = parseFloat(element.price2.replace(/[^0-9.]/g, "")) || 0;
+      let count_number2 = parseInt(element.count_number) || 1;
+      updatesub += price2 * count_number2;
+    });
+    // Update the subtotal display
+    const subtotalElement = document.querySelector(".subtotal-display");
+    if (subtotalElement) {
+      subtotalElement.textContent = `Subtotal: ${updatesub.toFixed(2)}`;
+    }
+  }
+
+
+        function plus2(index) {
+    let countElement = document.getElementById(`countn-${index}`);
+    let count_number2 = parseInt(countElement.innerText);
+    count_number2++;
+    countElement.innerText = count_number2;
+    array[index].count_number = count_number2; // Update quantity in array
+
+    // Convert price2 to a number:
+    let price2 = parseFloat(array[index].price2.replace(/[^0-9.]/g, "")) || 0;
+    document.querySelector(`.total-${index}`).textContent = (price2 * count_number2).toFixed(2);
+    calculateSubtotal()
+}
+
+function subs2(index) {
+    let countElement = document.getElementById(`countn-${index}`);
+    let count_number2 = parseInt(countElement.innerText);
+    if (count_number2 > 1) {
+        count_number2--;
+        countElement.innerText = count_number2;
+        array[index].count_number = count_number2; // Update quantity in array
+
+        // Convert price2 to a number:
+        let price2 = parseFloat(array[index].price2.replace(/[^0-9.]/g, "")) || 0;
+        document.querySelector(`.total-${index}`).textContent = (price2 * count_number2).toFixed(2);
+        calculateSubtotal()
+    }
+}
+
+
+
+
+        function addtocard(){
+          
+               cardinfo.innerHTML = ""
+          
+                array.forEach((element,index)=>{
+                    calculateSubtotal()
+                 
+                    let price = parseFloat(element.price2.replace(/[^0-9.]/g, "")) || 0; // Extract number, default to 0 if invalid
+                   let quantity = parseInt(element.count_number) || 1; // Ensure quantity is a valid number, default to 1
+                     let itemTotal = price * quantity; // Calculate total price
+                 
+                        let divs = document.createElement("div");
+                        divs.innerHTML = 
+                        `
+                        <img src = "${element.images}" height="100px" width = "100px"></img>
+                          <span onclick = "deletei(${index})" ><i class="fa-solid fa-xmark"></i></span> 
+                        <h1 class="fs-6"> ${element.title} </h1>
+                         <div class="d-flex  gap-3">
+                            <del>  <p>${element.price1}</p> </del>
+                         <p>${element.price2}</p>
+                            </div>
+                         <table class="table">
+                            <tr>
+                                <td onclick="subs2(${index})" > -</td>
+                                 <td id="countn-${index}"> ${element.count_number} </td>
+                                  <td  onclick="plus2(${index})"> + </td>
+                              
+                                   
+                            </tr>
+                                 </table>
+                                     <h1 class=" total-${index} text-black text-capitalize fs-5">  total :${itemTotal}<h1>
+
+                          
+                        `
+                        cardinfo.appendChild(divs);
+                })
+
+                if(array.length==0){
+                    cardinfo.innerHTML= `
+                       <i class="fa-solid fa-cart-shopping fs-1 d-flex justify-content-center"></i>
+                     <h1 class="text-capitalize mt-5"> your cart is empy </h1>`
+                }
+                else{
+                    cardinfo.innerHTML += `
+        <div style="margin-top: 30px;">
+            <p>Special instructions for seller:</p>
+            <input class="w-100 h-5" placeholder="Enter instructions" />
+            <h1 class="subtotal-display text-black">Subtotal: ${ updatesub.toFixed(2)}</h1>
+        </div>
+                
+
+              
+    `;
+        }
+        }
+        addtocard()
+
+      
+
+        function deletei(index){
+               array.splice(index, 1);
+                localStorage.setItem("username",JSON.stringify(array))
+                addtocard()
+        }
+
+
+
+
+          
+
+    </script>
+</body>
+
+</html>

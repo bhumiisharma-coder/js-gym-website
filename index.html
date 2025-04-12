@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Add these in your head section if not already present -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<body>
+
+  <div class="navbar bg-black text-white pt-3 pb-3">
+    <div class="container w-100">
+      <div class="logo"> <img src="./public/imges/the-fitness-store-logo_346x.avif" alt="" height="90px"></div>
+      <div class="nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+            data-bs-toggle="dropdown"> cardio</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#"> Home Equipment by Type</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a> Elliptical Machines </li>
+                <li><a class="dropdown-item" href="#"></a> Inversion</li>
+                <li><a class="dropdown-item" href="#"></a> Upright Bikes</li>
+                <li><a class="dropdown-item" href="#"></a> Recumbent Bikes</li>
+                <li><a class="dropdown-item" href="#"></a> Rowing Machines</li>
+                <li><a class="dropdown-item" href="#"></a> Recumbent Steppers</li>
+                <li><a class="dropdown-item" href="#"></a> Treadmills</li>
+                <li><a class="dropdown-item" href="#"></a> Cycle Trainers</li>
+              </ul>
+
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#"> Home Equipment by Brand</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a> BodyCraft </li>
+                <li><a class="dropdown-item" href="#"></a> Echelon Fitness</li>
+                <li><a class="dropdown-item" href="#"></a> Endurance </li>
+                <li><a class="dropdown-item" href="#"></a>Landice </li>
+                <li><a class="dropdown-item" href="#"></a> Life Fitness </li>
+                <li><a class="dropdown-item" href="#"></a> Nautilus </li>
+                <li><a class="dropdown-item" href="#"></a> Saris </li>
+                <li><a class="dropdown-item" href="#"></a> Schwinn</li>
+                <li><a class="dropdown-item" href="#"></a> Spirit </li>
+                <li><a class="dropdown-item" href="#"></a> Teeter </li>
+                <li><a class="dropdown-item" href="#"></a> WaterRower </li>
+                <li><a class="dropdown-item" href="#"></a> Universal Home Gym Equipment </li>
+
+
+              </ul>
+
+            </li>
+            <li class="dropdown-submenu">
+              <a class="  dropdown-toggle dropdown-item" href="#"> Commercial Equipment by Type</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a> Rowers </li>
+                <li><a class="dropdown-item" href="#"></a> Elliptical Machines </li>
+                <li><a class="dropdown-item" href="#"></a> Upright Bikes </li>
+                <li><a class="dropdown-item" href="#"></a> Recumbent Bikes </li>
+                <li><a class="dropdown-item" href="#"></a> Recumbent Steppers </li>
+                <li><a class="dropdown-item" href="#"></a> Steppers </li>
+                <li><a class="dropdown-item" href="#"></a> Treadmills </li>
+
+
+              </ul>
+
+            </li>
+            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"> Commercial Equipment by
+                Brand</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a> BodyCraft </li>
+                <li><a class="dropdown-item" href="#"></a> Echelon Fitness </li>
+                <li><a class="dropdown-item" href="#"></a> Endurance </li>
+                <li><a class="dropdown-item" href="#"></a> Landice Fitness </li>
+                <li><a class="dropdown-item" href="#"></a> Schwinn Fitness </li>
+                <li><a class="dropdown-item" href="#"></a> Spirit Fitness </li>
+                <li><a class="dropdown-item" href="#"></a> Water Rower </li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+            data-bs-toggle="dropdown">GYM systems</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Body Solid Collection</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a> Benches </li>
+                <li><a class="dropdown-item" href="#"></a> Single Station Machines</li>
+                <li><a class="dropdown-item" href="#"></a> Dual Station Machines </li>
+                <li><a class="dropdown-item" href="#"></a> Multi Station Gyms </li>
+                <li><a class="dropdown-item" href="#"></a> </li>
+                <li><a class="dropdown-item" href="#"></a> </li>
+
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> InFlight Fitness Collection</a></li>
+            <li><a class="dropdown-item" href="#"> Paradigm Fitness Collection</a></li>
+            <li><a class="dropdown-item" href="#"> BodyCraft Fitness Collection</a></li>
+            <li><a class="dropdown-item" href="#"> Spirit Fitness Commercial Collection</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+            data-bs-toggle="dropdown">plate loaded</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">body solid collections</a></li>
+            <li><a class="dropdown-item" href="#">paradigm fitness collections</a></li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white text-uppercase fs-6" href="#" role="button"
+            data-bs-toggle="dropdown">free weights</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Dumbbells</a></li>
+            <li><a class="dropdown-item" href="#"> Olympic Plates and Sets</a></li>
+            <li><a class="dropdown-item" href="#"> Kettlebells </a></li>
+            <li><a class="dropdown-item" href="#"> Bars and Collars </a></li>
+            <li><a class="dropdown-item" href="#"> PowerBlock Selectorized Dumbbells, Kettlebells and Barbells </a></li>
+            <li><a class="dropdown-item" href="#"> Benches </a></li>
+            <li><a class="dropdown-item" href="#"> Storage </a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+            data-bs-toggle="dropdown">accessories</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Accessories By Type</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Lifting Gloves </a></li>
+                <li><a class="dropdown-item" href="#">Lifting Belts </a></li>
+                <li><a class="dropdown-item" href="#"> Lifting Straps </a></li>
+                <li><a class="dropdown-item" href="#"> Sports Medical </a></li>
+                <li><a class="dropdown-item" href="#"> Jump Ropes </a></li>
+                <li><a class="dropdown-item" href="#"> Balls - Bosu, Exercise, Slam, Wall, Medicine </a></li>
+                <li><a class="dropdown-item" href="#"> Foam Rollers </a></li>
+                <li><a class="dropdown-item" href="#"> Fitness Mats </a></li>
+                <li><a class="dropdown-item" href="#"> Fitness Cleaning Supplies </a></li>
+                <li><a class="dropdown-item" href="#"> Cable Attachments</a></li>
+                <li><a class="dropdown-item" href="#"> Fitness Clothing </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Accessories By Brand</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Valeo Products </a></li>
+                <li><a class="dropdown-item" href="#"> Grizzly Fitness Products </a></li>
+                <li><a class="dropdown-item" href="#"> WeckMethod and Bosu Balance Trainers </a></li>
+                <li><a class="dropdown-item" href="#"> SPRI Products</a></li>
+                <li><a class="dropdown-item" href="#"> Schiek Products </a></li>
+                <li><a class="dropdown-item" href="#"> Harbinger Fitness Products </a></li>
+
+
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle " href="#"> Fitness Posters / Books</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                    Bruce Algra </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Motivational Fitness Posters </a></li>
+                    <li><a class="dropdown-item" href="#"> Workout Posters</a></li>
+                    <li><a class="dropdown-item" href="#"> Co-Ed Fitness Posters </a></li>
+                    <li><a class="dropdown-item" href="#"> Cardio Workout Posters </a></li>
+                    <li><a class="dropdown-item" href="#"> Exercise Posters </a></li>
+                    <li><a class="dropdown-item" href="#"> Anatomy Posters </a></li>
+                    <li><a class="dropdown-item" href="#"> </a></li>
+                    <li><a class="dropdown-item" href="#"> </a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#"> Fighthrough Fitness </a></li>
+                <li><a class="dropdown-item" href="#"> Productive Fitness Products </a></li>
+
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Miscellaneous Accessories </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+            data-bs-toggle="dropdown">bicycles</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Bicycle Lines Carried</a></li>
+            <li><a class="dropdown-item" href="#"> Classic High Wheelers</a></li>
+
+          </ul>
+        </li>
+
+      
+
+      </div>
+      <div class="d-flex gap-2 align-items-center login">
+        <span data-bs-toggle="offcanvas" data-bs-target="#demo">login/register</span>
+        <button class="btn bg-black text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"> <i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <span data-bs-toggle="offcanvas" data-bs-target="#demo2" onclick="addtocard()"><i class="fa-solid fa-cart-shopping"></i></span>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!-- offcanvas -->
+
+  <div class="offcanvas offcanvas-end" id="demo">
+    <div class="offcanvas-header bg-black text-white text-uppercase">
+      <h1 class="offcanvas-title">sign in </h1>
+      <span data-bs-dismiss="offcanvas" aria-label="Close" class="position-absolute end-0"> <i
+          class="fa-solid fa-xmark text-white  fs-1"></i></span>
+    </div>
+
+
+    <div class="offcanvas-body" id="offcanvas-login">
+      <div class="mb-4 mt-4">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+
+      <div class="mb-4">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+
+      🤦🏻‍♀️<a href="" class="text-center text-black text-capitalize"> lost your password ? </a> <br>
+      <button class="btn  btn-outline-black text-center w-100 d-block mt-4 mb-5 bg-black   text-white " type="button"
+        id="login-file">log in </button>
+
+      <hr>
+
+      <div>
+        <div class="d-flex justify-content-center"> <i class="fa-solid fa-user fs-1 text-center w-100 m-auto d-block "></i></div>
+        <h6 class="text-capitalize text-center"> no account yet ?</h6>
+        <p>Registering for this site allows you to access your order status and history. Just fill in the fields below,
+          and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make
+          the purchase process faster and easier.</p>
+        <p href="" class="text-capitalize text-black text-center" id="register-btn"> create an account</p>
+      </div
+      <hr>
+    </div>
+
+
+    <div class="offcanvas-body text-capitalize" id="offcanvas-register">
+      <div class="mb-4 mt-4">
+        <label for="email" class="form-label">first name</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+
+      <div class="mb-4">
+        <label for="pwd" class="form-label">last name</label>
+        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="mb-4">
+        <label for="pwd" class="form-label">email-address</label>
+        <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="mb-4">
+        <label for="pwd" class="form-label">password</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+
+
+      <button class="btn  btn-outline-black text-center w-100 d-block mt-4 mb-5 bg-black text-white   "
+        type="button">register </button>
+
+      <hr>
+
+      <div>
+     <div class="d-flex justify-content-center"> <i class="fa-solid fa-user fs-1 text-center w-100 m-auto d-block "></i></div>
+        <h6 class="text-capitalize text-center"> no account yet ?</h6>
+        <p>Registering for this site allows you to access your order status and history. Just fill in the fields below,
+          and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make
+          the purchase process faster and easier.</p>
+        <p href="" class="text-capitalize text-black text-center" id="login-btn">log in </p>
+      </div>
+
+      <hr>
+    </div>
+  </div>
+
+
+  <!-- offcanvas2 -->
+  <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header mt-5 ">
+      <input type="text" class="search position-relative text-white" placeholder="search for products"> <span
+        class="searchs"> <i class="fa-solid fa-magnifying-glass fs-1 "></i></span>
+
+    </div>
+    <div class="offcanvas-body small">
+      <span data-bs-dismiss="offcanvas" aria-label="Close" class="btn-bottom"> <i
+          class="fa-solid fa-xmark text-white "></i></span>
+    </div>
+  </div>
+
+
+
+  <!-- offcanvas3 -->
+
+
+  <div class="offcanvas offcanvas-end" id="demo2">
+    <div class="offcanvas-header bg-black text-white text-uppercase">
+      <h1 class="offcanvas-title">shopping cart </h1>
+      <p></p>
+      <span data-bs-dismiss="offcanvas" aria-label="Close" class="position-absolute end-0"> <i
+          class="fa-solid fa-xmark text-white  fs-1"></i></span>
+    </div>
+
+
+    <div class="offcanvas-body"  id="offbody">
+    </div>
+  </div>
+
+     <!-- section1 -->
+
+  <div class="your-class">
+   <a href="./banner1.html"> 
+    <div class="position-relative banner">
+    <img src="./public/imges/bg-2.jpg" alt="">
+       <div class="banner-inner p-5">
+        <h2 class="display-5 text-uppercase"><strong>Body Solid</strong></h2>
+        <h6 class="fs-4"><span>Dumbbells, weight plates, benches and more!</span></h6>
+         <button class="btn text-white fs-5  btn-outline-white border-white">shop now</button>
+       </div>
+  </div>
+</a>
+<a href="./banner2.html"> 
+    <div class="position-relative banner">
+      <img src="public/imges/bg1.jpg" alt="">
+         <div class="banner-inner p-5">
+          <h2 class="display-5 text-uppercase"><strong>Welcome to The Fitness Store!</strong></h2>
+          <h6 class="fs-4"><span>The Art of Science and Movement.</span</h6>
+           <button class="btn text-white fs-5  btn-outline-white border-white">shop now</button>
+         </div>
+    </div>
+  </a>
+
+   <a href="">
+    <div class="position-relative banner">
+      <img src="public/imges/bg-3.jpg" alt="">
+         <div class="banner-inner p-5">
+          <h2 class="display-5 text-uppercase"><strong>BodyCraft Fitness Equipment</strong></h2>
+          <h6 class="fs-4"><span>The Art of Science and Movement.</span></h6>
+           <button class="btn text-white fs-5  btn-outline-white border-white">shop now</button>
+         </div>
+    </div>
+
+   </a>
+
+   <a href="">
+    <div class="position-relative banner">
+      <img src="public/imges/bg-4.jpg" alt="">
+         <div class="banner-inner p-5">
+          <h2 class="display-5 text-uppercase"><strong>Spirit Fitness Equipment</strong></h2>
+          <h6 class="fs-4"><span>Reach your fitness goals and let the SPIRIT move you!</span></h6>
+           <button class="btn text-white fs-5  btn-outline-white border-white">shop now</button>
+         </div>
+    </div>
+   </a>
+
+   <a href="">
+    <div class="position-relative banner">
+      <img src="public/imges/bg-5.jpg" alt="">
+         <div class="banner-inner p-5">
+          <h2 class="display-5 text-uppercase"><strong><strong>Echelon Fitness Equipment now at The Fitness Store!</strong></strong></h2>
+          <h6 class="fs-4"><span>Immerse yourself into an entire fitness experience!</span></h6>
+           <button class="btn text-white fs-5  btn-outline-white border-white">shop now</button>
+         </div>
+    </div>
+   </a>
+
+  <a href="">
+    <div class="position-relative banner">
+      <img src="public/imges/bg-6.jpg" alt="">
+         <div class="banner-inner p-5">
+          <h2 class="display-5 text-uppercase"><strong>Welcome to The Fitness Store!</strong></h2>
+          <h6 class="fs-4"><span>Please take a look around at one of the finest selection of fitness products in Wisconsin.</span></h6>
+           <button class="btn text-white fs-5  btn-outline-white border-white">shop now</button>
+         </div>
+    </div>
+  </a>
+  </div>
+
+   <!-- section2 -->
+      <div class="containers mt-5">
+         <h1 class="text-center text-capitalize mb-5 mt-4 pb-5">shop collections</h1>
+         <div class="grid">
+           
+            
+              <div class="grid-1">
+             <img src="./public/imges/s2-ig1.jpg" alt="" class="grid-img">
+               <div class=" btn2  border-none   "> <button class="btn ps-4 pe-4  mb-4 text-capitalize">cardio</button></div>
+               </div>
+         
+              
+             <div class="grid-2">
+     
+              <img src="public/imges/s2-ig-2.jpg" alt="" class="grid-img2">
+              <div class="btn2   border-none">  <button class="btn  mb-4  ps-4 pe-4 text-capitalize"> GYM system</button></div>
+             </div>
+              
+             <div class="grid-3">
+            <img src="public/imges/s2-ig3.jpg" alt="" class="grid-img3">
+             <div class="btn2  border-none">  <button class="btn  mb-4 ps-4 pe-4 text-capitalize"> bicycles</button></div>
+             </div>
+              
+             <div class="grid-4">
+              <img src="public/imges/s2-ig4.jpg" alt="" class="grid-img4">
+             <div class="btn2  border-none"> <button class="btn  mb-4 ps-4 pe-4 text-capitalize"> plate loaded</button></div>
+             </div>
+              
+             <div  class="grid-5">
+             <img src="public/imges/s2-ig5.jpg" alt="" class="grid-img5">
+            <div class="btn2  border-none"> <button class="btn  mb-4 ps-4 pe-4 text-capitalize">free weights</button></div>
+             </div>
+              
+              
+            
+         </div>
+      </div>
+
+      <!-- section3 -->
+          <div class="containers bg-black text-white mt-5 text-center p-5">
+                 <h2 class="fs-4">BICYCLE CUSTOMERS <br>
+                  CLICK HERE <br>
+                </h2>
+                <h2 class="mt-3 fs-4">  TO BE LINKED TO OUR NEW BICYCLE, <br>
+                  ACCESSORIES AND SERVICE SCHEDULING PAGE</h2>
+
+
+          </div>
+
+
+          <!-- section4 -->
+
+          <div class="containers">
+             <div class="d-flex justify-content-center align-items-center">
+              <hr class="w-25">
+              <div class="text-center m-5"> 
+                <h6 class="text-uppercase">just arrived</h6>
+               <h2>NEW PRODUCTS </h2>
+            </div>
+              <hr class="w-25">
+             </div>
+
+            <div id="responsives" class="autoplay">
+        <!-- Product Cards will be appended here -->
+   
+          </div>
+
+          </div>
+
+          <div class="containers">
+            <div class="d-flex justify-content-center align-items-center">
+             <hr class="w-25">
+             <div class="text-center m-5"> 
+             
+              <h2>STORE SPECIALS & OVERSTOCK	 </h2>
+           </div>
+             <hr class="w-25">
+            </div>
+
+            <div id="featuredProductsSlider" class="autoplay">
+              <!-- Featured products will be loaded here -->
+            </div>
+
+         </div>
+
+             <!-- section6 -->
+
+
+             <div class="section6 mt-5 pt-5">
+
+      
+             <div class="d-flex justify-content-center gap-1 containers ">
+                <div class="p-5"> <img src="./public/imges/s6.webp" alt=""></div>
+                <div class="p-5">
+                     <h6>Cardio, Gym Systems, & More</h6>
+                     <h1><strong>Our Fitness Equipment</strong></h1>
+                     <p class="mt-3 mb-4 fs-6" >The Fitness Store, based in Manitowoc, WI, is your source for gym equipment for either your home or commercial gym. Whether you need to search your gym equipment by type or brand, you should easily be able to find what you’re looking for in our online store!</p>
+                     <p class="fs-6">Our products include cycling bikes, recumbent steppers, treadmills, free weights, benches, and various accessories to improve your strength, durability, and overall health. We carry a wide range of quality equipment from leading brands, so you’ll be able to find anything you need to achieve your fitness goals!</p>
+                     <h5 class="mt-4 mb-4 ">Cardio Equipment</h5>
+                     <p class="fs-6">Looking to get your heart rate up and burn calories? At The Fitness Store, we have a wide selection of cardio equipment to choose from. Our products include elliptical machines, upright bikes, recumbent bikes/steppers, and treadmills. No matter if you prefer low-impact workouts or high-intensity interval training (HIIT), we have a wide range of cardio equipment in stock to help you on your fitness journey!</p>
+                     <h5  class="mt-4 mb-4">Gym Systems</h5>
+                     <p class="fs-6">We also stock gym systems like benches, and single, dual, and multi station gyms. Our gym systems are the perfect home solution for anyone looking to build muscles and improve their strength. We have a wide variety of systems that combine strength training and cardio exercises – so you’ll benefit from power racks, squat racks, and cable machines alike, to create a custom full-body workout.</p>
+                </div>
+             </div>
+            </div>
+
+              <!-- section7 -->
+
+             <div class="section6">
+              <div class="d-flex justify-content-center gap-1 containers  mb-5 pb-5">
+              
+                <div class="p-5">
+                     <h6>Cardio, Gym Systems, & More</h6>
+                     <h1><strong>Our Fitness Equipment</strong></h1>
+                     <p class="mt-3 mb-4 fs-6" >The Fitness Store, based in Manitowoc, WI, is your source for gym equipment for either your home or commercial gym. Whether you need to search your gym equipment by type or brand, you should easily be able to find what you’re looking for in our online store!</p>
+                     <p class="fs-6">Our products include cycling bikes, recumbent steppers, treadmills, free weights, benches, and various accessories to improve your strength, durability, and overall health. We carry a wide range of quality equipment from leading brands, so you’ll be able to find anything you need to achieve your fitness goals!</p>
+                     <h5 class="mt-4 mb-4 ">Cardio Equipment</h5>
+                     <p class="fs-6">Looking to get your heart rate up and burn calories? At The Fitness Store, we have a wide selection of cardio equipment to choose from. Our products include elliptical machines, upright bikes, recumbent bikes/steppers, and treadmills. No matter if you prefer low-impact workouts or high-intensity interval training (HIIT), we have a wide range of cardio equipment in stock to help you on your fitness journey!</p>
+                     <h5  class="mt-4 mb-4">Gym Systems</h5>
+                     <p class="fs-6">We also stock gym systems like benches, and single, dual, and multi station gyms. Our gym systems are the perfect home solution for anyone looking to build muscles and improve their strength. We have a wide variety of systems that combine strength training and cardio exercises – so you’ll benefit from power racks, squat racks, and cable machines alike, to create a custom full-body workout.</p>
+                </div>
+                <div class="p-5"> <img src="./public/imges/s7.webp" alt=""></div>
+             </div>
+             </div>
+
+    <!-- section8 -->
+
+
+    <div class="text-center containers mb-5">
+      <h5 class="text-grey">Why Shop With The Fitness Store?</h5>
+      <div class="d-flex justify-content-center align-items-center ">
+        <hr class="w-25">
+        <div class="text-center m-5"> 
+         
+         <h2 class="text-capitalize">review<h2>
+      </div>
+        <hr class="w-25">
+       </div>
+       <p> At The Fitness Store, we always strive to make our products and services accessible to everyone. Offering many popular, quality brands, our online store provides a wide selection of home and commercial gym equipment for you to create the custom fitness routine you need. From cardio and gym systems, to free weights and accessories, you should be able to find whatever equipment you're looking for. Let us help you achieve your fitness goals so that you can become a healthier you!</p>
+       <div class="your-class2  mt-5 pt-3">
+           <div class="">
+               <i class="fa-solid fa-user fa-2-users"></i>
+                <p class="mt-4">The Fitness Store has been my go-to  for decades. I have purchased many items over the years and have had them serviced there, as well. I have bought several bicycles, tons of exercise equipment (literally), including a Tuff Stuff half cage with weight-stack system, which, in fact, the owner himself dismantled the system, delivered and set it up at new homes I moved to over the years. I have never experienced anything other than world-class customer service from the fitness store. I highly, highly recommended them.</p>
+           </div>
+           <div>
+            <i class="fa-solid fa-user"></i>
+                <p class="mt-4">The Fitness Store has been my go-to  for decades. I have purchased many items over the years and have had them serviced there, as well. I have bought several bicycles, tons of exercise equipment (literally), including a Tuff Stuff half cage with weight-stack system, which, in fact, the owner himself dismantled the system, delivered and set it up at new homes I moved to over the years. I have never experienced anything other than world-class customer service from the fitness store. I highly, highly recommended them.</p>
+           </div>
+           <div>
+            <i class="fa-solid fa-user"></i>
+                <p class="mt-4">The Fitness Store has been my go-to  for decades. I have purchased many items over the years and have had them serviced there, as well. I have bought several bicycles, tons of exercise equipment (literally), including a Tuff Stuff half cage with weight-stack system, which, in fact, the owner himself dismantled the system, delivered and set it up at new homes I moved to over the years. I have never experienced anything other than world-class customer service from the fitness store. I highly, highly recommended them.</p>
+           </div>
+           <div>
+            <i class="fa-solid fa-user"></i>
+                <p class="mt-4">The Fitness Store has been my go-to  for decades. I have purchased many items over the years and have had them serviced there, as well. I have bought several bicycles, tons of exercise equipment (literally), including a Tuff Stuff half cage with weight-stack system, which, in fact, the owner himself dismantled the system, delivered and set it up at new homes I moved to over the years. I have never experienced anything other than world-class customer service from the fitness store. I highly, highly recommended them.</p>
+           </div>
+       </div>
+
+    </div>
+
+
+
+     <!-- section8 -->
+        <div class="section8 text-white text-capitalize text-center p-5">
+              <div class="p-5">
+                <h4>Stay Informed</h4>
+                <p>Sign up to received periodic emails and specials delivered to your in-box. But don't worry, we won't become a nuisance.</p>
+                <input type="email" placeholder="enter here your email address">
+                <button class="perplebtn">sign up </button>
+              </div>
+        </div>
+
+        <!-- footer -->
+
+          <div class="bg-black text-white text-capitalize pt-5">
+            <div class="fi pb-5 mb-3">
+              <img src="./public/imges/the-fitness-store-logo_346x.avif" alt="" height="90px"  >
+            </div>
+                
+                <div class=" footer">
+                     <div>
+                           <h5>Our Location</h5>
+                           <h6>The Fitness Store</h6>
+                           <h6  >1410 Dewey St.
+                            Manitowoc, WI 54220
+                            Phone: 920-684-8088
+                            (Email recommended)</h6>
+                     </div>
+                     <div>
+                          <h5>Information</h5>
+                          <a href="" class="text-decoration-none text-white d-block">Bicycles</a>
+                          <a href="" class="text-decoration-none text-white d-block">Blog</a>
+                          <a href="" class="text-decoration-none text-white d-block ">Virtual Store Tour</a>
+                         
+                          <a href="" class="text-decoration-none text-white d-block">Manitowoc, WI Video</a>
+                          <a href="" class="text-decoration-none text-white d-block">About Us</a>
+                          <a href="" class="text-decoration-none text-white d-block">Customer Service</a>
+                          <a href="" class="text-decoration-none text-white d-block">Sitemap</a>
+                          <a href="" class="text-decoration-none text-white d-block">Orders and Returns</a>
+                          <a href="" class="text-decoration-none text-white d-block">Contact Us</a>
+                     </div>
+                     <div>
+                      <h5>Why Buy From Us</h5>
+                      <a href="" class="text-decoration-none text-white d-block"> Shipping & Returns</a>
+                      <a href="" class="text-decoration-none text-white d-block">Secure Shopping</a>
+                      <a href="" class="text-decoration-none text-white d-block">International Shipping</a>
+                      <a href="" class="text-decoration-none text-white d-block">Affiliates</a>
+                      <a href="" class="text-decoration-none text-white d-block">Group Sales</a>
+                      <a href="" class="text-decoration-none text-white d-block"> Terms of Service</a>
+                      <a href="" class="text-decoration-none text-white d-block"></a>
+                     </div>
+                     <div>
+                      <h5>My Account</h5>
+                      <a href="" class="text-decoration-none text-white d-block">Login / Register</a>
+                      <a href="" class="text-decoration-none text-white d-block"> View Cart</a>
+                      <a href="" class="text-decoration-none text-white d-block">Track My Order</a>
+                      <a href="" class="text-decoration-none text-white d-block">Help</a>
+                     </div>
+                </div>
+          </div>
+
+
+     <script src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick();
+      $('.your-class2').slick();
+   
+    });
+   
+   
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+
+				
+  </script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

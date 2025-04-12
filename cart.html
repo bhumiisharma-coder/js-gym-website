@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <h1>Hello</h1>
+
+
+  <div id="cartContainer">
+
+  </div>
+
+
+  <script>
+
+function fetchdata() {
+      fetch("http://localhost:3000/carts")
+        .then((response) => response.json())
+        .then((data) => alldata(data))
+        .catch((error) => console.log(error))
+    }
+    fetchdata();
+
+    function alldata(data) {
+      data.forEach(element => {
+
+        let responsive = document.getElementById("cartContainer");
+
+        responsive.style.display = "flex";
+        responsive.style.flexWrap = "wrap"
+        console.log(responsive)
+        let cart = document.createElement("div");
+        cart.classList.add("cartparent")
+        cart.style.width = "500px"
+        cart.innerHTML = `
+            
+           <div>
+             <img src="${element.image}" height="300px"/>
+            <h5> ${element['product-title']}</h5>
+            <del class="price"> ${element.price}</del>
+             <span class = "price">  ${element.price2} </span> 
+             <span class = "addto"> <i class="fa-solid fa-cart-shopping"></i> add to cart </span>
+           </div>
+          
+            `
+        responsive.appendChild(cart);
+      });
+
+
+
+    }
+
+  </script>
+
+</body>
+
+</html>

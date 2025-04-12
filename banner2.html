@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  .footer-img{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .cart2{
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 450px;
+       width: 450px;
+       background-position: center !important;
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 25px;
+       text-transform: capitalize;
+    }
+    .login{
+      cursor: pointer;
+    }
+  
+</style>
+
+</head>
+<body>
+    <div class="navbar bg-black text-white pt-3 pb-3">
+        <div class="container w-100">
+          <div class="logo"> <img src="./public/imges/the-fitness-store-logo_346x.avif" alt="" height="90px"></div>
+          <div class="nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                data-bs-toggle="dropdown"> cardio</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#"> Home Equipment by Type</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a> Elliptical Machines </li>
+                    <li><a class="dropdown-item" href="#"></a> Inversion</li>
+                    <li><a class="dropdown-item" href="#"></a> Upright Bikes</li>
+                    <li><a class="dropdown-item" href="#"></a> Recumbent Bikes</li>
+                    <li><a class="dropdown-item" href="#"></a> Rowing Machines</li>
+                    <li><a class="dropdown-item" href="#"></a> Recumbent Steppers</li>
+                    <li><a class="dropdown-item" href="#"></a> Treadmills</li>
+                    <li><a class="dropdown-item" href="#"></a> Cycle Trainers</li>
+                  </ul>
+    
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#"> Home Equipment by Brand</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a> BodyCraft </li>
+                    <li><a class="dropdown-item" href="#"></a> Echelon Fitness</li>
+                    <li><a class="dropdown-item" href="#"></a> Endurance </li>
+                    <li><a class="dropdown-item" href="#"></a>Landice </li>
+                    <li><a class="dropdown-item" href="#"></a> Life Fitness </li>
+                    <li><a class="dropdown-item" href="#"></a> Nautilus </li>
+                    <li><a class="dropdown-item" href="#"></a> Saris </li>
+                    <li><a class="dropdown-item" href="#"></a> Schwinn</li>
+                    <li><a class="dropdown-item" href="#"></a> Spirit </li>
+                    <li><a class="dropdown-item" href="#"></a> Teeter </li>
+                    <li><a class="dropdown-item" href="#"></a> WaterRower </li>
+                    <li><a class="dropdown-item" href="#"></a> Universal Home Gym Equipment </li>
+    
+    
+                  </ul>
+    
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="  dropdown-toggle dropdown-item" href="#"> Commercial Equipment by Type</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a> Rowers </li>
+                    <li><a class="dropdown-item" href="#"></a> Elliptical Machines </li>
+                    <li><a class="dropdown-item" href="#"></a> Upright Bikes </li>
+                    <li><a class="dropdown-item" href="#"></a> Recumbent Bikes </li>
+                    <li><a class="dropdown-item" href="#"></a> Recumbent Steppers </li>
+                    <li><a class="dropdown-item" href="#"></a> Steppers </li>
+                    <li><a class="dropdown-item" href="#"></a> Treadmills </li>
+    
+    
+                  </ul>
+    
+                </li>
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"> Commercial Equipment by
+                    Brand</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a> BodyCraft </li>
+                    <li><a class="dropdown-item" href="#"></a> Echelon Fitness </li>
+                    <li><a class="dropdown-item" href="#"></a> Endurance </li>
+                    <li><a class="dropdown-item" href="#"></a> Landice Fitness </li>
+                    <li><a class="dropdown-item" href="#"></a> Schwinn Fitness </li>
+                    <li><a class="dropdown-item" href="#"></a> Spirit Fitness </li>
+                    <li><a class="dropdown-item" href="#"></a> Water Rower </li>
+    
+                  </ul>
+                </li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                data-bs-toggle="dropdown">GYM systems</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Body Solid Collection</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a> Benches </li>
+                    <li><a class="dropdown-item" href="#"></a> Single Station Machines</li>
+                    <li><a class="dropdown-item" href="#"></a> Dual Station Machines </li>
+                    <li><a class="dropdown-item" href="#"></a> Multi Station Gyms </li>
+                    <li><a class="dropdown-item" href="#"></a> </li>
+                    <li><a class="dropdown-item" href="#"></a> </li>
+    
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#"> InFlight Fitness Collection</a></li>
+                <li><a class="dropdown-item" href="#"> Paradigm Fitness Collection</a></li>
+                <li><a class="dropdown-item" href="#"> BodyCraft Fitness Collection</a></li>
+                <li><a class="dropdown-item" href="#"> Spirit Fitness Commercial Collection</a></li>
+              </ul>
+            </li>
+    
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                data-bs-toggle="dropdown">plate loaded</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">body solid collections</a></li>
+                <li><a class="dropdown-item" href="#">paradigm fitness collections</a></li>
+    
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white text-uppercase fs-6" href="#" role="button"
+                data-bs-toggle="dropdown">free weights</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Dumbbells</a></li>
+                <li><a class="dropdown-item" href="#"> Olympic Plates and Sets</a></li>
+                <li><a class="dropdown-item" href="#"> Kettlebells </a></li>
+                <li><a class="dropdown-item" href="#"> Bars and Collars </a></li>
+                <li><a class="dropdown-item" href="#"> PowerBlock Selectorized Dumbbells, Kettlebells and Barbells </a></li>
+                <li><a class="dropdown-item" href="#"> Benches </a></li>
+                <li><a class="dropdown-item" href="#"> Storage </a></li>
+    
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                data-bs-toggle="dropdown">accessories</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Accessories By Type</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Lifting Gloves </a></li>
+                    <li><a class="dropdown-item" href="#">Lifting Belts </a></li>
+                    <li><a class="dropdown-item" href="#"> Lifting Straps </a></li>
+                    <li><a class="dropdown-item" href="#"> Sports Medical </a></li>
+                    <li><a class="dropdown-item" href="#"> Jump Ropes </a></li>
+                    <li><a class="dropdown-item" href="#"> Balls - Bosu, Exercise, Slam, Wall, Medicine </a></li>
+                    <li><a class="dropdown-item" href="#"> Foam Rollers </a></li>
+                    <li><a class="dropdown-item" href="#"> Fitness Mats </a></li>
+                    <li><a class="dropdown-item" href="#"> Fitness Cleaning Supplies </a></li>
+                    <li><a class="dropdown-item" href="#"> Cable Attachments</a></li>
+                    <li><a class="dropdown-item" href="#"> Fitness Clothing </a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Accessories By Brand</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Valeo Products </a></li>
+                    <li><a class="dropdown-item" href="#"> Grizzly Fitness Products </a></li>
+                    <li><a class="dropdown-item" href="#"> WeckMethod and Bosu Balance Trainers </a></li>
+                    <li><a class="dropdown-item" href="#"> SPRI Products</a></li>
+                    <li><a class="dropdown-item" href="#"> Schiek Products </a></li>
+                    <li><a class="dropdown-item" href="#"> Harbinger Fitness Products </a></li>
+    
+    
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle " href="#"> Fitness Posters / Books</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                        Bruce Algra </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Motivational Fitness Posters </a></li>
+                        <li><a class="dropdown-item" href="#"> Workout Posters</a></li>
+                        <li><a class="dropdown-item" href="#"> Co-Ed Fitness Posters </a></li>
+                        <li><a class="dropdown-item" href="#"> Cardio Workout Posters </a></li>
+                        <li><a class="dropdown-item" href="#"> Exercise Posters </a></li>
+                        <li><a class="dropdown-item" href="#"> Anatomy Posters </a></li>
+                        <li><a class="dropdown-item" href="#"> </a></li>
+                        <li><a class="dropdown-item" href="#"> </a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#"> Fighthrough Fitness </a></li>
+                    <li><a class="dropdown-item" href="#"> Productive Fitness Products </a></li>
+    
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#"> Miscellaneous Accessories </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white text-uppercase fs-6" href="#" role="button"
+                data-bs-toggle="dropdown">bicycles</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Bicycle Lines Carried</a></li>
+                <li><a class="dropdown-item" href="#"> Classic High Wheelers</a></li>
+    
+              </ul>
+            </li>
+          </div>
+          <div class="d-flex gap-2 align-items-center login">
+            <span data-bs-toggle="offcanvas" data-bs-target="#demo">login/register</span>
+            <button class="btn bg-black text-white" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"> <i
+                class="fa-solid fa-magnifying-glass"></i></button>
+            <span data-bs-toggle="offcanvas" data-bs-target="#demo2"><i class="fa-solid fa-cart-shopping"></i></span>
+    
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" id="demo">
+        <div class="offcanvas-header bg-black text-white text-uppercase">
+          <h1 class="offcanvas-title">sign in </h1>
+          <span data-bs-dismiss="offcanvas" aria-label="Close" class="position-absolute end-0"> <i
+              class="fa-solid fa-xmark text-white  fs-1"></i></span>
+        </div>
+    
+    
+        <div class="offcanvas-body" id="offcanvas-login">
+          <div class="mb-4 mt-4">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+    
+          <div class="mb-4">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+    
+          🤦🏻‍♀️<a href="" class="text-center text-black text-capitalize"> lost your password ? </a> <br>
+          <button class="btn  btn-outline-black text-center w-100 d-block mt-4 mb-5 bg-black   text-white " type="button"
+            id="login-file">log in </button>
+    
+          <hr>
+    
+          <div>
+            <i class="fa-solid fa-user fs-1 text-center"></i>
+            <h6 class="text-capitalize text-center"> no account yet ?</h6>
+            <p>Registering for this site allows you to access your order status and history. Just fill in the fields below,
+              and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make
+              the purchase process faster and easier.</p>
+            <p href="" class="text-capitalize text-black text-center" id="register-btn"> create an account</p>
+          </div>
+    
+          <hr>
+        </div>
+    
+    
+        <div class="offcanvas-body text-capitalize" id="offcanvas-register">
+          <div class="mb-4 mt-4">
+            <label for="email" class="form-label">first name</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+    
+          <div class="mb-4">
+            <label for="pwd" class="form-label">last name</label>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+          <div class="mb-4">
+            <label for="pwd" class="form-label">email-address</label>
+            <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+          <div class="mb-4">
+            <label for="pwd" class="form-label">password</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+    
+    
+          <button class="btn  btn-outline-black text-center w-100 d-block mt-4 mb-5 bg-black text-white   "
+            type="button">register </button>
+    
+          <hr>
+    
+          <div>
+            <i class="fa-solid fa-user fs-1 text-center"></i>
+            <h6 class="text-capitalize text-center"> no account yet ?</h6>
+            <p>Registering for this site allows you to access your order status and history. Just fill in the fields below,
+              and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make
+              the purchase process faster and easier.</p>
+            <p href="" class="text-capitalize text-black text-center" id="login-btn">log in </p>
+          </div>
+    
+          <hr>
+        </div>
+      </div>
+    
+    
+      <!-- offcanvas2 -->
+      <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header mt-5 ">
+          <input type="text" class="search position-relative text-white" placeholder="search for products"> <span
+            class="searchs"> <i class="fa-solid fa-magnifying-glass fs-1 "></i></span>
+    
+        </div>
+        <div class="offcanvas-body small">
+          <span data-bs-dismiss="offcanvas" aria-label="Close" class="btn-bottom"> <i
+              class="fa-solid fa-xmark text-white "></i></span>
+        </div>
+      </div>
+    
+    
+    
+      <!-- offcanvas3 -->
+    
+    
+      <div class="offcanvas offcanvas-end" id="demo2">
+        <div class="offcanvas-header bg-black text-white text-uppercase">
+          <h1 class="offcanvas-title">shopping cart </h1>
+          <span data-bs-dismiss="offcanvas" aria-label="Close" class="position-absolute end-0"> <i
+              class="fa-solid fa-xmark text-white  fs-1"></i></span>
+        </div>
+    
+    
+        <div class="offcanvas-body" id="card-info">
+        </div>
+      </div>
+
+      
+
+
+      <!-- section1 -->
+           <div class="bg-dark text-white text-center text-uppercase pt-5 pb-5">
+            <h1> collections </h1>
+              
+           </div>
+
+           <!-- section2 -->
+           <div id="data" class="d-flex flex-wrap justify-content-center gap-5 mt-5">
+
+               
+           </div>
+
+
+           <!-- footer -->
+
+
+           <div class="bg-black text-white text-capitalize mt-5 p-5">
+            <img src="./public/imges/the-fitness-store-logo_346x.avif" alt=""  class="footer-img">
+            <div class="d-flex justify-content-around">
+                 <div>
+                       <h5>Our Location</h5>
+                       <h6>The Fitness Store</h6>
+                       <h6 class="w-50">1410 Dewey St.
+                        Manitowoc, WI 54220
+                        Phone: 920-684-8088
+                        (Email recommended)</h6>
+                 </div>
+                 <div>
+                      <h5>Information</h5>
+                      <a href="" class="text-decoration-none text-white d-block">Bicycles</a>
+                      <a href="" class="text-decoration-none text-white d-block">Blog</a>
+                      <a href="" class="text-decoration-none text-white d-block ">Virtual Store Tour</a>
+                     
+                      <a href="" class="text-decoration-none text-white d-block">Manitowoc, WI Video</a>
+                      <a href="" class="text-decoration-none text-white d-block">About Us</a>
+                      <a href="" class="text-decoration-none text-white d-block">Customer Service</a>
+                      <a href="" class="text-decoration-none text-white d-block">Sitemap</a>
+                      <a href="" class="text-decoration-none text-white d-block">Orders and Returns</a>
+                      <a href="" class="text-decoration-none text-white d-block">Contact Us</a>
+                 </div>
+                 <div>
+                  <h5>Why Buy From Us</h5>
+                  <a href="" class="text-decoration-none text-white d-block"> Shipping & Returns</a>
+                  <a href="" class="text-decoration-none text-white d-block">Secure Shopping</a>
+                  <a href="" class="text-decoration-none text-white d-block">International Shipping</a>
+                  <a href="" class="text-decoration-none text-white d-block">Affiliates</a>
+                  <a href="" class="text-decoration-none text-white d-block">Group Sales</a>
+                  <a href="" class="text-decoration-none text-white d-block"> Terms of Service</a>
+                  <a href="" class="text-decoration-none text-white d-block"></a>
+                 </div>
+                 <div>
+                  <h5>My Account</h5>
+                  <a href="" class="text-decoration-none text-white d-block">Login / Register</a>
+                  <a href="" class="text-decoration-none text-white d-block"> View Cart</a>
+                  <a href="" class="text-decoration-none text-white d-block">Track My Order</a>
+                  <a href="" class="text-decoration-none text-white d-block">Help</a>
+                 </div>
+            </div>
+      </div>
+
+      <script>
+        let dataparent = document.getElementById("data");
+               function fetchdat(){
+                 fetch("http://localhost:3000/products3")
+                 .then((res)=> res.json())
+                 .then((data)=> datalist(data))
+               }
+               fetchdat()
+
+               function datalist(data){
+                data.forEach(element => {
+                  console.log(element.imagesall)
+                 
+                    let cart = document.createElement("div");
+             
+        
+      // Change this line in your datalist() function:
+// Fix the link generation to properly pass the images array
+// Assuming element is your product object
+cart.innerHTML = `
+    <a href="details2.html?image=${encodeURIComponent(element.image)}&title=${encodeURIComponent(element['product-title'])}&price1=${encodeURIComponent(element.price)}&price2=${encodeURIComponent(element.price2)}&imgparent=${encodeURIComponent(JSON.stringify(element.imagesall))}" class="anchor">
+        <div style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${element.image})" class="cart2">
+            ${element['product-title']}
+        </div>
+    </a>
+`;
+cart.style.textAlign = "center";
+dataparent.appendChild(cart);
+
+                   
+
+                });
+              
+
+                  
+                
+                  
+               }
+              
+      </script>
+      <script src="script.js"></script>
+              
+              
+      </script>
+  
+</body>
+</html>
